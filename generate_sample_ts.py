@@ -20,7 +20,8 @@ def map_function(i):
     knn = netp.average_neigh_degree(net)
     clustering = netp.clustering(net)
 
-    return [net, deg_seq, knn, clustering]
+    #return [net, deg_seq, knn, clustering]
+    return [net, deg_seq]
 
 if __name__ == "__main__":
   
@@ -45,7 +46,7 @@ if __name__ == "__main__":
             for i,r in enumerate(result):
                 F["net_%s"%i] = r[0]
                 F["degree_%s"%i] = r[1]
-                F["degree_knn_%s"%i]= r[2]
-                F["degree_clustering_%s"%i] = r[3]
+                #F["degree_knn_%s"%i]= r[2]
+                #F["degree_clustering_%s"%i] = r[3]
                     
         print ('calculation for:', filename, 'is done')
