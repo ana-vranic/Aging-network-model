@@ -7,7 +7,7 @@ b=1.5 #beta parameter
 i=100 #number of samples
 filename="results/${ts_filename}_L${L}_a${a}_b${b}_${i}samples.h5py" #file to save samples
 
-python ./network_models/generate_sample_ts.py  ${ts_filename} ${L} ${a} ${b} ${i} ${filename}
+python generate_sample_ts.py  ${ts_filename} ${L} ${a} ${b} ${i} ${filename}
 
 
 N=1000 #total number of nodes
@@ -18,4 +18,4 @@ b=1.5 #beta parameter
 i=100 #number of samples
 filename="results/N${N}_M${M}_L${L}_a${a}_b${b}_${i}samples.h5py" #file to save samples
 
-#python ./network_models/generate_sample.py  ${N} ${M} ${L} ${a} ${b} ${i} ${filename}
+#python generate_sample.py  ${N} ${M} ${L} ${a} ${b} ${i} ${filename}
