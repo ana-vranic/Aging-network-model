@@ -1,6 +1,5 @@
 # Aging-network-model
 
-this is test
 
 Growing network model where at each time step we add M nodes with L links. The linking probability of node i at time t depends on degree and age of the node.
 Modifiaction of the original aging model can simulate growth of some real systems, following the time series of new users.   
